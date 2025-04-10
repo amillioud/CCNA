@@ -68,10 +68,11 @@ R1(config)#interface g0/0
 
 R1(config-if)#shutdown
 
-* R1(config-if)#
-%LINK-5-CHANGED: Interface GigabitEthernet0/0, changed state to administratively down
+R1(config-if)#
 
-%LINEPROTO-5-UPDOWN: Line protocol on Interface GigabitEthernet0/0, changed state to down *
+** %LINK-5-CHANGED: Interface GigabitEthernet0/0, changed state to administratively down
+
+%LINEPROTO-5-UPDOWN: Line protocol on Interface GigabitEthernet0/0, changed state to down **
 
 
 
