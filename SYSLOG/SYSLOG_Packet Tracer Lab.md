@@ -70,14 +70,49 @@ R1(config-if)#shutdown
 
 R1(config-if)#
 
-** %LINK-5-CHANGED: Interface GigabitEthernet0/0, changed state to administratively down
+%LINK-5-CHANGED: Interface GigabitEthernet0/0, changed state to administratively down
 
-%LINEPROTO-5-UPDOWN: Line protocol on Interface GigabitEthernet0/0, changed state to down **
+%LINEPROTO-5-UPDOWN: Line protocol on Interface GigabitEthernet0/0, changed state to down 
 
+R1(config-if)#no shutdown
 
+R1(config-if)#
 
+*Feb 28, 16:29:09.2929: %LINK-5-CHANGED: Interface GigabitEthernet0/0, changed state to up
 
+*Feb 28, 16:29:09.2929: %LINEPROTO-5-UPDOWN: Line protocol on Interface GigabitEthernet0/0, changed state to up
 
+R1(config-if)#exit
+
+R1(config)#service timestamps log datetime msec
+
+### PC1 (from command prompt)
+
+C:\>telnet 192.168.1.1
+
+Username: jeremy
+
+Password: ccna
+
+R1>enable
+
+Password: ccna
+
+R1#configure terminal
+
+Enter configuration commands, one per line.  End with CNTL/Z.
+
+R1(config)#interface g0/1
+
+R1(config-if)#no shutdown 
+
+R1(config-if)#do terminal monitor
+
+R1(config-if)#exit
+
+R1(config)#logging buffer 8192
+
+R1(config)#logging trap debugging
 
 
 
