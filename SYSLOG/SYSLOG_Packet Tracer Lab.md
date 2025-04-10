@@ -1,4 +1,4 @@
-# Syslog Packet Tracer Lab
+# Syslog Configuration Packet Tracer Lab
 
 **Author:** Millioud NetLab  
 **Date:** 10-04-2025  
@@ -27,6 +27,24 @@
 
 6. Enable logging to the syslog server SRV1 with a level of 'debugging'.
  
+## Topology
+
+<img width="583" alt="Captura de Pantalla 2025-04-10 a la(s) 22 16 17" src="https://github.com/user-attachments/assets/d387e91c-1eb2-4659-9b17-18ba980b52fd" />
+
+## Devices Used
+
+| Device         | Model        | Quantity |
+|----------------|--------------|----------|
+| Switch 1         | 2960         | 1        |
+| Router 1| 2911         | 1        |
+| PC 1           | Generic      | 1        |
+| PC 2           | Generic      | 1        |
+| Server 1           | Generic      | 1        |
+
+
+
+
+
 
 
 
