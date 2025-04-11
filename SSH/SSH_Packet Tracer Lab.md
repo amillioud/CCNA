@@ -40,13 +40,30 @@ Protocols: SSH only
 
 ## Topology
 
+<img width="887" alt="Captura de Pantalla 2025-04-11 a la(s) 17 13 54" src="https://github.com/user-attachments/assets/279e1d6c-e639-48ea-a6e8-bfc6e3040087" />
 
 
+## Devices Used
 
+| Device         | Model        | Quantity |
+|----------------|--------------|----------|
+| Laptop         | Generic         | 1        |
+| Switch  | 2960         | 2       |
+| PC             | Generic      | 1        |
+| Router | 2911      | 1        |
 
+## IP Addressing table
 
-
-
+| Device | Interface | VLAN | IP Address     | Subnet Mask       |
+|--------|-----------|------|----------------|-------------------|
+| Laptop    | RS 232     | na   | na | na     |
+| Switch 2    | Console port    | na   | na  |na |
+| Switch 2    | Console port    | 1   | 192.168.2.253  | 255.255.255.0 |
+| Router 2   | G0/1   | 1   | 192.168.2.254  | 255.255.255.0 |
+| Router 2   | G0/0    | 1   | 10.0.0.2  | 255.255.255.252 |
+| Router 1   | G0/0    | 1   | 10.0.0.1  | 255.255.255.252 |
+| Router 1   | G0/1    | 1   | 192.168.1.254 | 255.255.255.0 |
+| PC 1   | F0/1    | 1   | 192.168.1.1 | 255.255.255.0 |
 
 
 
