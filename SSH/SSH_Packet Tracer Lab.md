@@ -66,6 +66,48 @@ Protocols: SSH only
 | PC 1   | F0/1    | 1   | 192.168.1.1 | 255.255.255.0 |
 
 
+## Configuration Steps
+
+### From Laptop 1 terminal 
+
+Switch>enable
+
+Switch#conf t
+
+Switch(config)#hostname SW1
+
+SW1(config)#enable secret ccna
+
+SW1(config)#username jeremy secret ccna
+
+SW1(config)#interface vlan 1
+
+SW1(config-if)#ip address 192.168.2.253 255.255.255.0
+
+SW1(config-if)#no shutdown
+
+SW1(config-if)#exit
+
+SW1(config)#ip default-gateway 192.168.2.254
+
+SW1(config)#line 0
+
+SW1(config-line)#login local
+
+SW1(config-line)#exec-timeout 5 0
+
+SW1(config)#access-list 1 permit host 192.168.1.1
+
+SW1(config)#line vty 0 15
+
+SW1(config-line)#login local
+
+SW1(config-line)#exec-timeout 5 0
+
+SW1(config-line)#transport input ssh
+
+SW1(config-line)#access-class 1 in
+
 
 
 
