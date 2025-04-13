@@ -44,7 +44,7 @@ Transferring firmware to network devices
 
 Network PXE (Preboot Execution Environment) booting
 
-Port: Uses Port 69
+Port: Uses Port 69 (only used in the very first message of the client to the server; the server chooses a random source port for the following messages)
 
 ## FTP vs TFTP
 
