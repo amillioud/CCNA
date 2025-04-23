@@ -7,14 +7,16 @@
 1. Attempt to ping from PC1 to 8.8.8.8.  Does the ping work?
 
 2. Configure static NAT on R1.
+   
    > Configure the appropriate inside/outside interfaces
+   
    > Map the IP addresses of PC1, PC2, and PC3 to 100.0.0.x/24
 
-3. Ping 8.8.8.8 from PC1 again.  Does the ping work?
+4. Ping 8.8.8.8 from PC1 again.  Does the ping work?
 
-4. Ping google.com from each PC, and then check the NAT translations on R1.
+5. Ping google.com from each PC, and then check the NAT translations on R1.
 
-5. Clear the NAT translations on R1.  Which entries remain?
+6. Clear the NAT translations on R1.  Which entries remain?
 
 ## Topology
 
