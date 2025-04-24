@@ -46,6 +46,7 @@
 
 R1>enable
 R1#show ip access-lists
+
 <img width="367" alt="Captura de Pantalla 2025-04-24 a la(s) 19 19 34" src="https://github.com/user-attachments/assets/168dbc07-1a60-4908-a69f-38cbe26e40c2" />
 
 
