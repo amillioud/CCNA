@@ -99,7 +99,8 @@ Phone 1 (.4)
 
 dial 2010
 
-<img width="780" alt="Captura de Pantalla 2025-05-04 a la(s) 0 28 22" src="https://github.com/user-attachments/assets/11f7cf87-20ca-4947-8a2c-1a037518320e" />
+<img width="1071" alt="Captura de Pantalla 2025-05-04 a la(s) 0 32 31" src="https://github.com/user-attachments/assets/6bced437-a083-495e-9acb-c177d916cdec" />
+
 
 
 
