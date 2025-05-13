@@ -50,9 +50,55 @@
 
 ## Configuration Steps
 
+### R1 
 
+R1(config)#class-map HTTPS_MAP
 
+R1(config-cmap)#match protocol https
 
+R1(config-cmap)#exit
+
+R1(config)#class-map HTTP_MAP
+
+R1(config-cmap)#match protocol http
+
+R1(config-cmap)#exit
+
+R1(config)#class-map ICMP_MAP
+
+R1(config-cmap)#match protocol icmp
+
+R1(config)#do show run | section class-map
+
+R1(config)#policy-map G0/0/0_OUT
+
+R1(config-pmap)#class HTTPS_MAP
+
+R1(config-pmap-c)#set ip dscp AF31
+
+R1(config-pmap-c)#priority percent 10
+
+R1(config-pmap)#exit
+
+R1(config-pmap)#class HTTP_MAP
+
+R1(config-pmap-c)#set ip dscp AF32
+
+R1(config-pmap-c)#bandwidth percent 10
+
+R1(config-pmap)#exit
+
+R1(config-pmap)#class ICMP_MAP
+
+R1(config-pmap-c)#set ip dscp CS2
+
+R1(config-pmap-c)#bandwidth percent 5
+
+R1(config-pmap-c)#end
+
+R1(config)#int g0/0/0
+
+R1(config-if)#service-policy output G0/0/0_OUT
 
 
 
