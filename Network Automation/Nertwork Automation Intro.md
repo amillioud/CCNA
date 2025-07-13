@@ -27,7 +27,17 @@ There are varios tools and methods than can be used to automate tasks in the net
 <img width="200" height="200" alt="image" src="https://github.com/user-attachments/assets/990eb809-48d6-445d-8849-9646e906b0ec" />
 
 
+## Logical planes
 
+Functional layers that separate different types of tasks or responsabilities within a network device or architecture.
+
+### Data Plane (Forwarding Plane)
+
+Moves data packets (frames, packets) from one interface to another. Usually fast processes at the hardware level; using ASIC (application-specific integrated circuit).
+
+- A router receives a message, looks for the most specific matching route in its routing table, and forwards it out of the appropiate interface to the next hop. 
+
+<img width="400" height="200" alt="image" src="https://github.com/user-attachments/assets/2f0cea85-1e38-4596-9a37-b0985a40b9e6" />
 
 
 
