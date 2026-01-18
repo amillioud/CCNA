@@ -26,30 +26,38 @@
 
 ## 4. Configuration
 
-### 5. R1
+### 4.1 R1
 
-Router>enable
-Router#configure terminal
+
 Router(config)#hostname R1
-R1(config)#interface range g3/0,g0/0,f1/0
-R1(config-if-range)#no shutdown
-R1(config-if-range)#interface g3/0
-R1(config-if)#ip address 203.0.113.1 255.255.255.252
-R1(config-if)#interface g0/0
-R1(config-if)#ip address 10.0.12.1 255.255.255.252
-R1(config-if)#interface f1/0
-R1(config-if)#ip address 10.0.13.1 255.255.255.252
 
+R1(config)#router ospf 1 
 
+R1(config-router)#network 10.0.12.0 255.255.255.252 area 0
 
+R1(config-router)#network 10.0.13.0 255.255.255.252 area 0
 
+R1(config-router)#network 1.1.1.1 255.255.255.255 area 0
 
+R1(config-router)#passive-interface l0
 
+R1(config)#ip route 0.0.0.0 0.0.0.0 203.0.113.2
 
+R1(config)#router ospf 1
 
+R1(config-router)#default-information originate
 
+### 4.2 R2
 
+Router(config)#hostname R2
 
+R2(config)#router ospf 1
+
+R2(config-router)#network 10.0.12.0 255.255.255.252 area 0
+
+R2(config-router)#network 10.0.24.0 255.255.255.252 area 0
+
+R2(config-router)#passive-interface l0
 
 
 
