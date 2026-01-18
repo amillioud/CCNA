@@ -57,10 +57,41 @@ R2(config-router)#network 10.0.12.0 255.255.255.252 area 0
 
 R2(config-router)#network 10.0.24.0 255.255.255.252 area 0
 
+R2(config-router)#network 2.2.2.2 255.255.255.255 area 0
+
 R2(config-router)#passive-interface l0
 
+### 4.3 R4
 
+Router(config)#hostname R4
 
+R4(config)#router ospf 1
+
+R4(config-router)#network 192.168.4.0 255.255.255.0 area 0
+
+R4(config-router)#network 10.0.24.0 255.255.255.252 area 0
+
+R4(config-router)#network 10.0.34.0 255.255.255.252 area 0
+
+R4(config-router)#network 4.4.4.4 255.255.255.255 area 0
+
+R4(config-router)#passive-interface g0/0
+
+R4(config-router)#passive-interface l0
+
+### 4.4 R3
+
+Router(config)#hostname R4
+
+R3(config)#router ospf 1
+
+R3(config-router)#network 10.0.34.0 255.255.255.252 area 0
+
+R3(config-router)#network 10.0.13.0 255.255.255.252 area 0
+
+R3(config-router)#network 10.0.13.0 255.255.255.252 area 0
+
+R3(config-router)#passive-interface l0
 
 
 
