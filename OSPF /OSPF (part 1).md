@@ -89,9 +89,26 @@ R3(config-router)#network 10.0.34.0 255.255.255.252 area 0
 
 R3(config-router)#network 10.0.13.0 255.255.255.252 area 0
 
-R3(config-router)#network 10.0.13.0 255.255.255.252 area 0
+R3(config-router)#network 3.3.3.3 255.255.255.255 area 0
 
 R3(config-router)#passive-interface l0
+
+### 4.5 PC1
+
+Default-gateway: 192.168.4.254
+
+IP-address/subnet mask: 192.168.4.1 255.255.255.0
+
+
+
+
+
+
+
+
+
+
+
 
 
 
